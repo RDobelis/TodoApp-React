@@ -53,6 +53,13 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-secondary);
+  }
 }
 
 .positionHeader {
@@ -69,6 +76,13 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-secondary);
+  }
 }
 
 .skillsHeader {
@@ -85,6 +99,13 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-secondary);
+  }
 }
 
 .skillsList {
@@ -101,6 +122,13 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-quaternary);
+  }
 }
 
 .hobbiesHeader {
@@ -117,6 +145,13 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-quaternary);
+  }
 }
 
 .hobbiesList {
@@ -133,4 +168,11 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: hover($color-tertiary);
+    color: hover($color-quaternary);
+  }
 }

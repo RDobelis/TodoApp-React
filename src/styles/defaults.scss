@@ -13,7 +13,17 @@ $color-black : black;
 }
 
 @mixin for-at-least ($min-width: 600px, $max-widt: 900px) {
-    @media screen and (min-width: $min-width) and (max-width: $max-widt) {
+    @media only screen and (min-width: $min-width) and (max-width: $max-widt) {
+        @content;
+    }
+}
+
+$phone: 600px;
+$tablet: 900px;
+$desktop: 1200px;
+
+@mixin at-least ($min-width: $phone) {
+    @media only screen and (min-width: $min-width) {
         @content;
     }
 }

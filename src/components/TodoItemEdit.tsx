@@ -1,5 +1,6 @@
+import { Todo } from "./TodoApp";
 import { useState } from "react";
-import { Todo } from "../App";
+import { FiEdit } from "react-icons/fi";
 import "../styles/App.scss";
 
 type TodoListProps = {
@@ -10,9 +11,15 @@ type TodoListProps = {
 export const TodoItemEdit = ({ todo, onEdit }: TodoListProps) => {
   const [editMode, setEditMode] = useState(false);
   const [newTitle, setNewTitle] = useState(todo.title);
+  const [originalTitle, setOriginalTitle] = useState(todo.title);
 
   const handleEdit = () => {
     onEdit(todo.id, newTitle);
+    setEditMode(false);
+  };
+
+  const handleCancel = () => {
+    setNewTitle(originalTitle);
     setEditMode(false);
   };
 
@@ -23,9 +30,22 @@ export const TodoItemEdit = ({ todo, onEdit }: TodoListProps) => {
         value={newTitle}
         onChange={(e) => setNewTitle(e.target.value)}
       />
-      <button onClick={handleEdit}>Save</button>
+      <button className="edit-button" onClick={handleEdit}>
+        Save
+      </button>
+      <button className="edit-button" onClick={handleCancel}>
+        Cancel
+      </button>
     </div>
   ) : (
-    <button onClick={() => setEditMode(true)}>Edit</button>
+    <button
+      className="edit-button"
+      onClick={() => {
+        setOriginalTitle(newTitle);
+        setEditMode(true);
+      }}
+    >
+      <FiEdit />
+    </button>
   );
 };

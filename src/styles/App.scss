@@ -1,45 +1,23 @@
 @import "./defaults.scss";
 
 li {
-  border: 1px solid black;
-  border-radius: steps(1);
-  padding: steps(2);
-  margin-bottom: steps(2);
-  
-}
-
-.todo-checkbox {
-  margin-right: steps(2);
-}
-
-.todo-title {
-  font-size: steps(4);
-  font-weight: bold;
-  margin-bottom: steps(2);
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .container {
-  max-width: 600px;
-  padding: steps(4);
+  max-width: 400px;
+  padding: 0 steps(4);
   margin: 0 auto;
 }
 
-.todo-button {
-  background-color: $color-primary;
-  margin-right: steps(2);
-  border: none;
-  padding: steps(2) steps(4);
-  border-radius: steps(1);
-  cursor: pointer;
-  transition: all 0.7s ease-in-out;
-
-  &:hover {
-    background-color: $color-secondary;
-  }
-}
-
 .title {
-  color: rgb(9, 36, 192);
+  color: #383232;
   font-size: steps(10);
   margin: 0 auto;
   margin-bottom: steps(5);

@@ -1,6 +1,7 @@
-import { Todo } from "../App";
+import { Todo } from "./TodoApp";
 import { useState } from "react";
 import "../styles/App.scss";
+import "../styles/components/TodoForm.scss";
 
 type TodoFormProps = {
   onSubmit: (newTodo: Todo) => void;
@@ -21,19 +22,22 @@ export const TodoForm = ({ onSubmit }: TodoFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="todo-title">Add todo</label>
-      <input
-        id="todo-title"
-        type="text"
-        value={inputValue}
-        placeholder="Izglābt pasauli..."
-        onChange={(event) => {
-          const newValue = event.target.value;
-          setInputValue(newValue);
-        }}
-      />
-      <button type="submit">Add</button>
+    <form onSubmit={handleSubmit} className="todo-form">
+      <div className="input-group">
+        <button type="submit" className="add-button">
+          <span className="icon">+</span>
+        </button>
+        <input
+          id="todo-title"
+          type="text"
+          value={inputValue}
+          placeholder="Izglābt pasauli..."
+          onChange={(event) => {
+            const newValue = event.target.value;
+            setInputValue(newValue);
+          }}
+        />
+      </div>
     </form>
   );
 };

@@ -1,0 +1,71 @@
+@import "/src/styles/defaults.scss";
+
+.add-button {
+  display: flex;
+  align-items: center;
+}
+
+
+.add-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #383232;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-button :hover {
+  color: #f34a4a;
+}
+
+.add-button .icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.add-button span {
+  margin-left: 5px;
+}
+
+.add-button {
+  color: #383232;
+}
+
+.todo-form {
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: steps(2);
+
+    .add-button {
+      margin-right: 10px;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      color: #4d4d4d;
+      cursor: pointer;
+
+      .icon {
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      outline: none;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+  }
+}
+

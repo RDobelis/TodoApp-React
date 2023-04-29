@@ -1,4 +1,5 @@
-import { Todo } from "../App";
+import { Todo } from "./TodoApp";
+import { FaTrash } from "react-icons/fa";
 import "../styles/App.scss";
 
 type TodoListProps = {
@@ -9,7 +10,7 @@ type TodoListProps = {
 export const TodoItemDelete = ({ todo, onDelete }: TodoListProps) => {
   return (
     <button type="button" onClick={() => onDelete(todo.id)}>
-      Delete
+      <FaTrash />
     </button>
   );
 };

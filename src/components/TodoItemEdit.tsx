@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Todo } from "../App";
+import "../styles/App.scss";
 
 type TodoListProps = {
   todo: Todo;

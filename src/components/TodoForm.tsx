@@ -1,5 +1,6 @@
 import { Todo } from "../App";
 import { useState } from "react";
+import "../styles/App.scss";
 
 type TodoFormProps = {
   onSubmit: (newTodo: Todo) => void;

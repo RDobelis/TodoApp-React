@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Todo App</h1>
+      <h1 className="title">Todo App</h1>
       <TodoForm onSubmit={handleAddTodo} />
       <ul>
         {todos.map((todo) => {

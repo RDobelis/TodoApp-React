@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
+import { Link } from "react-router-dom";
+import { addTodoToServer } from "./todoAPI";
 
 export type Todo = {
   title: string;
@@ -37,7 +39,7 @@ export const TodoApp = () => {
     setTodos(newTodos);
   };
 
-  const handleCheckboxChange = (id: string) => {
+  const handleCheckboxChange = async (id: string) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === id) {
         return {
@@ -49,6 +51,16 @@ export const TodoApp = () => {
     });
 
     setTodos(newTodos);
+
+    const todoToCheck = newTodos.find((todo) => todo.id === id);
+    if (todoToCheck && todoToCheck.isDone) {
+      const serverResponse = await addTodoToServer(todoToCheck);
+      if (serverResponse) {
+        console.log("Successfully added todo to server:", serverResponse);
+      } else {
+        console.log("Failed to add todo to server.");
+      }
+    }
   };
 
   const handleAddTodo = (todo: Todo) => {
@@ -73,7 +85,8 @@ export const TodoApp = () => {
         onDelete={handleDelete}
         onEdit={handleEdit}
         onCheckboxChange={handleCheckboxChange}
-      />
+          />
+          <Link to="/todo-list">View Todo List</Link>
     </div>
   );
 };

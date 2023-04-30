@@ -4,10 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: steps(2);
   border: 1px solid #f109de;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: steps(3);
+  margin-bottom: steps(2);
+  margin-top: steps(2);
   background-color: #f1a1f8;
 }
 

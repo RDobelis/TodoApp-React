@@ -1,17 +1,6 @@
 @import "./defaults.scss";
 
-li {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  outline: none;
-  background-color: #dc5eec;
-  margin-bottom: steps(2);
-  background: linear-gradient(to top, #a821ca, #422847);
-}
+
 
 .container {
   max-width: 500px;

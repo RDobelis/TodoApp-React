@@ -1,0 +1,19 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "ChatGPT Ban Lifted in Italy After Data-Privacy Concessions",
+            "description": "Italy's privacy regulator rescinded its temporary ban on ChatGPT after the chatbot’s developer, OpenAI, implemented changes demanded by the regulator, the latest twist in the complex regulatory response to new artificial-intelligence technology."
+        },
+        {
+            "id": 2,
+            "title": "The 2021 AI Index Report",
+            "description": "The AI Index is an effort to track, collate, distill, and visualize data relating to artificial intelligence. It aspires to be a comprehensive resource of data and analysis for policymakers, researchers, executives, journalists, and the general public to develop intuitions about the complex field of AI."
+        },
+        {
+            "id": 3,
+            "title": "Chatbots Are Digesting the Internet. The Internet Wants to Get Paid.",   
+            "description": "If you've ever published a blog, or posted something to Reddit, or shared content anywhere else on the open web, it’s very likely you have played a part in creating the latest generation of artificial intelligence."
+        }
+    ]
+}

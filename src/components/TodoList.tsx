@@ -4,7 +4,7 @@ import { TodoListItem } from "./TodoListItem";
 type TodoListProps = {
   todos: Todo[];
   onDelete: (id: string) => void;
-  onEdit: (id: string, newTitle: string) => void;
+  onEdit: (id: string, newTitle: string,  newDescription?: string) => void;
   onCheckboxChange: (id: string) => void;
 };
 

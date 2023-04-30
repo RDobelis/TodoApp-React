@@ -17,12 +17,18 @@ export const TodoApp = () => {
     setTodos(newTodos);
   };
 
-  const handleEdit = (id: string, newTitle: string) => {
+  const handleEdit = (
+    id: string,
+    newTitle: string,
+    newDescription?: string
+  ) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === id) {
         return {
           ...todo,
           title: newTitle,
+          description:
+            newDescription !== undefined ? newDescription : todo.description,
         };
       }
       return todo;
@@ -49,6 +55,12 @@ export const TodoApp = () => {
     if (todo.title.trim() === "") {
       return;
     }
+    const newTodo: Todo = {
+      title: todo.title,
+      id: Math.random().toString(),
+      isDone: false,
+      description: todo.description,
+    };
     setTodos([...todos, todo]);
   };
 
@@ -64,4 +76,4 @@ export const TodoApp = () => {
       />
     </div>
   );
-}
+};

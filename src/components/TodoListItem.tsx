@@ -1,10 +1,11 @@
 import { TodoItemIsDone } from "./TodoItemIsDone";
 import { Todo } from "./TodoApp";
+import "../styles/components/TodoItem.scss";
 
 type TodoListItemProps = {
   todo: Todo;
   onDelete: (id: string) => void;
-  onEdit: (id: string, newTitle: string) => void;
+  onEdit: (id: string, newTitle: string, newDescription?: string) => void;
   onCheckboxChange: (id: string) => void;
 };
 
@@ -14,6 +15,10 @@ export const TodoListItem = ({
   onEdit,
   onCheckboxChange,
 }: TodoListItemProps) => {
+  const handleEdit = (newTitle: string, newDescription?: string) => {
+    onEdit(todo.id, newTitle, newDescription);
+  };
+
   return (
     <li key={todo.id}>
       <div className="todo-list-item">
@@ -25,7 +30,7 @@ export const TodoListItem = ({
           onDelete={() => {
             onDelete(todo.id);
           }}
-          onEdit={onEdit}
+          onEdit={handleEdit}
         />
       </div>
     </li>

@@ -8,6 +8,9 @@ li {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   outline: none;
+  background-color: #dc5eec;
+  margin-bottom: steps(2);
+  background: linear-gradient(to top, #a821ca, #422847);
 }
 
 .container {
@@ -17,8 +20,24 @@ li {
 }
 
 .title {
-  color: #383232;
+  color: #ffffff;
   font-size: steps(10);
-  margin: 0 auto;
-  margin-bottom: steps(5);
+  margin: 0 steps(20);
+  text-align: center;
+  margin-bottom: steps(6);
+  margin-top: steps(3);
+  text-shadow: 0 0 24px rgba(186, 12, 221, 0.575);
+  border: none;
+  border-radius: steps(2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  background-color: #c63bd8;
+  padding-bottom: steps(2);
+  padding-top: steps(2);
+}
+
+body {
+  background: linear-gradient(to top right, #7704fa, #e6acac);
+  box-shadow: 2px 6px 12px rgb(121, 120, 120);
+  height: 100vh;
 }

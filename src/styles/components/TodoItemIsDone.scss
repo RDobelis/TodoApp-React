@@ -1,13 +1,14 @@
-@import '/src/styles/defaults.scss';
+@import "/src/styles/defaults.scss";
 
 .todo-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #f109de;
   border-radius: 5px;
   margin-bottom: 10px;
+  background-color: #f1a1f8;
 }
 
 .todo-item-info {
@@ -38,8 +39,7 @@
 }
 
 .done-button .icon,
-.delete-button .icon
-.edit-button .icon {
+.delete-button .icon .edit-button .icon {
   font-size: 1.2em;
   margin-right: 5px;
 }

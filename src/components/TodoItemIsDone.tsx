@@ -61,7 +61,7 @@ export const TodoItemIsDone = ({
           </div>
         ) : (
           <div>
-            <p className={todo.isDone ? "done" : ""}>{newTitle}</p>
+            <p className={todo.isDone ? "done" : "notdone"}>{newTitle}</p>
             <p>{newDescription}</p>
           </div>
         )}

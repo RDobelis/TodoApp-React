@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: steps(2);
+  padding: steps(3);
   border: 1px solid #f109de;
   border-radius: steps(3);
   margin-bottom: steps(2);
@@ -22,6 +22,17 @@
   flex-direction: column;
   flex-grow: 1;
   overflow-wrap: break-word;
+  padding: steps(2);
+
+  .notdone {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+    .done {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 }
 
 .todo-item-buttons {
@@ -37,7 +48,7 @@
   background-color: transparent;
   color: #383232;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: steps(2);
 }
 
 .done-button:hover,
@@ -49,11 +60,11 @@
 .done-button .icon,
 .delete-button .icon .edit-button .icon {
   font-size: 1.2em;
-  margin-right: 5px;
+  margin-right: steps(1);
 }
 
 .done-button span {
-  margin-left: 5px;
+  margin-left: steps(1);
 }
 
 .delete-button {
@@ -61,5 +72,5 @@
 }
 
 .checkboxdone {
-  margin-right: 10px;
+  margin-right: steps(3);
 }

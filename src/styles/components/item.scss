@@ -1,0 +1,53 @@
+@import "/src/styles/defaults.scss";
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: #f1d1ab;
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  flex-grow: 1;
+  overflow-wrap: break-word;
+  padding: 1rem;
+}
+
+.todo-item-buttons {
+  display: flex;
+
+  & > button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #161516;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #f34a4a;
+    }
+
+    & .icon {
+      font-size: 1.2em;
+      margin-right: 0.5rem;
+    }
+  }
+
+  & .delete-button {
+    color: #383232;
+  }
+}

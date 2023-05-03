@@ -1,0 +1,62 @@
+@import "../defaults.scss";
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: steps(2) steps(4);
+}
+
+.article-title {
+  font-size: 2rem;
+  margin-top: steps(4);
+  margin-bottom: steps(2);
+  text-align: center;
+  text-shadow: 0 0 24px rgba(255, 255, 255, 0.575);
+  border: none;
+  border-radius: steps(2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  background-color: #f1d1ab;
+  padding: steps(2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.article-description {
+  font-size: 1.2rem;
+  margin-top: steps(2);
+  margin-bottom: steps(2);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.article-category {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: steps(2);
+  margin-bottom: steps(2);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.back-button {
+  min-width: steps(12);
+  padding: steps(2) steps(4);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: steps(2);
+  color: black;
+  background-color: #f1d1ab;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &.secondary {
+    background-color: #f1d1ab;
+  }
+}

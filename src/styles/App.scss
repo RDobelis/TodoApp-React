@@ -6,25 +6,34 @@
   margin: 0 auto;
 }
 
+.container-articles {
+  max-width: 800px;
+  padding: steps(2) steps(4);
+  margin: steps(2) auto;
+  border-radius: steps(4);
+}
+
 .title {
   color: #080808;
   font-size: steps(10);
-  margin: 0 steps(20);
+  margin: 0 steps(10);
   text-align: center;
   margin-bottom: steps(6);
   margin-top: steps(3);
-  text-shadow: 0 0 24px rgba(186, 12, 221, 0.575);
+  text-shadow: 0 0 24px rgba(255, 255, 255, 0.575);
   border: none;
   border-radius: steps(2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   outline: none;
-  background-color: #c63bd8;
+  background-color: #f1d1ab;
   padding-bottom: steps(2);
   padding-top: steps(2);
+  padding-left: steps(6);
+  padding-right: steps(6);
 }
 
 body {
-  background: linear-gradient(to top right, #7704fa, #e6acac);
+  background: linear-gradient(to top right, #6b6760, #cca76f);
   box-shadow: 2px 6px 12px rgb(121, 120, 120);
   height: 100vh;
 }

@@ -1,0 +1,36 @@
+@import "../defaults.scss";
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.primary {
+  background-color: transparent;
+  border: none;
+  color: black;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #f34a4a;
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  border: none;
+  color: black;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #f34a4a;
+  }
+}

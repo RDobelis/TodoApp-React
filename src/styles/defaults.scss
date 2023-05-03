@@ -1,32 +1,28 @@
-
-
-$color-primary : rgb(34, 128, 206);
-$color-secondary : rgb(54, 233, 233);
+$color-primary : #ED9300;
+$color-secondary : rgb(38, 38, 88);
 
 $color-white : white;
 $color-black : black;
 
+
 @function steps($number){
-    @return $number * 4px;
+  @return $number * 4px;
 }
 
-@mixin for-at-least ($min-width: 600px, $max-widt: 900px) {
-    @media only screen and (min-width: $min-width) and (max-width: $max-widt) {
-        @content;
-    }
+
+@mixin for-at-least ($min-width:600px, $max-width: 900px) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
 }
 
 $phone: 600px;
 $tablet: 900px;
 $desktop: 1200px;
 
-@mixin at-least ($min-width: $phone) {
-    @media only screen and (min-width: $min-width) {
-        @content;
-    }
-}
 
-@function hover($color){
-    @return darken($color, 30%);
+@mixin at-least ($min-width:$phone) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
 }
-

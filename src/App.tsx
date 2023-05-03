@@ -1,17 +1,24 @@
 import "./styles/App.scss";
-import { TodoApp } from "./components/TodoApp";
-import { TodoListFromServer } from "./components/TodoListFromServer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./views/Home";
+import { About } from "./views/About";
+import { Todos } from "./views/Todos";
+import { NavBar } from "./components/NavBar";
+import { Articles } from "./views/Articles";
+import { Article } from "./views/Article";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<TodoApp />} />
-          <Route path="/todo-list" element={<TodoListFromServer />} />
-        </Routes>
-      </Router>
+    <div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/todos" element={<Todos />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/articles/:articleId" element={<Article />} />
+        <Route path="*" element={<div>404</div>} />
+      </Routes>
     </div>
   );
 }

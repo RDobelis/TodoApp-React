@@ -1,0 +1,91 @@
+@import "../defaults.scss";
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3c7a2;
+
+  border: 2px solid $color-primary;
+  border-radius: steps(4);
+  padding: steps(4);
+
+  row-gap: steps(4);
+  max-width: 600px;
+  margin: steps(4) auto;
+
+  label {
+    font-size: 1.5rem;
+  }
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid #f1d1ab;
+  border-radius: steps(4);
+  padding: steps(4);
+
+  row-gap: steps(4);
+  max-width: 600px;
+  margin: steps(4) auto;
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    padding: steps(2);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: steps(2);
+    resize: vertical;
+    overflow-y: auto;
+  }
+
+  select {
+    padding: steps(2);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: steps(2);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23a6a6a6'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+  }
+
+  .article-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: steps(4);
+    gap: steps(2);
+
+    button {
+      min-width: steps(12);
+      padding: steps(2) steps(4);
+      font-size: 1.1rem;
+      border: none;
+      border-radius: steps(2);
+      color: black;
+      background-color: #f1d1ab;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &.secondary {
+        background-color: #f1d1ab;
+      }
+    }
+  }
+}
+
+

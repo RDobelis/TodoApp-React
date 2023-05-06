@@ -16,7 +16,7 @@ To install the project, follow these steps:
 
 1. Clone the repository to your local machine using the command: 
 ```
-git clone https://github.com/username/repo-name.git
+git clone https://github.com/RDobelis/TodoApp-React.git
 ```
 2. Navigate to the project directory using the command: 
 ```

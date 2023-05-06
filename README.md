@@ -51,3 +51,7 @@ npm start
 ## Acknowledgments
 
 - This project was built as part of a coding challenge.
+
+## Deployment
+
+The app is deployed on Vercel and can be accessed at https://todo-app-react-five-gold.vercel.app/.

@@ -30,7 +30,11 @@ npm install
 ```
 npm start
 ```
-5. Open the project in your web browser by navigating to http://localhost:3000/
+5. Start json-server using this command:
+```
+json-server --watch db.json --port 3004
+```
+6. Open the project in your web browser by navigating to http://localhost:3000/
 
 ## Features
 

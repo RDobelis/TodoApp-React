@@ -18,7 +18,9 @@ export const ArticleForm = ({
   const [description, setDescription] = useState(
     initialValues?.description || ""
   );
-  const [category, setCategory] = useState(initialValues?.category || "Food");
+  const [category, setCategory] = useState(
+    initialValues?.category || "Category 1"
+  );
   const input = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -40,31 +42,27 @@ export const ArticleForm = ({
         onSubmit(body);
       }}
     >
-      <label htmlFor="article-title">Title</label>
+      <label htmlFor="article-title">Article title</label>
       <input
         ref={input}
         type="text"
         id="article-title"
         value={title}
-        placeholder="Enter title"
         onChange={(e) => {
           setTitle(e.target.value);
         }}
       />
 
-      <label htmlFor="article-description">Description</label>
+      <label htmlFor="article-description">Article description</label>
       <textarea
         id="article-description"
         value={description}
-        placeholder="Enter description"
-        rows={5}
-        cols={50}
         onChange={(e) => {
           setDescription(e.target.value);
         }}
       />
 
-      <label htmlFor="article-category">Category</label>
+      <label htmlFor="article-category">Article category</label>
       <select
         id="article-category"
         onChange={(e) => {
@@ -78,13 +76,11 @@ export const ArticleForm = ({
         <option value="Science">Science</option>
       </select>
 
-      <div className="article-form-buttons">
-        <Button type="submit">Save</Button>
+      <Button type="submit">Save</Button>
 
-        <Button variant="secondary" onButtonClick={onCancel}>
-          Cancel
-        </Button>
-      </div>
+      <Button variant="secondary" onButtonClick={onCancel}>
+        Cancel
+      </Button>
     </form>
   );
 };

@@ -14,13 +14,17 @@
 }
 
 .primary {
-  background-color: transparent;
+  background-color: #f1d1ab;
+  color: $color-black;
   border: none;
-  color: black;
-  transition: color 0.2s ease;
+  border-radius: steps(4);
+  padding: steps(1) steps(2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: #f34a4a;
+    background-color: $color-primary;
+    color: $color-white;
   }
 }
 

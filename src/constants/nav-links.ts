@@ -10,9 +10,13 @@ export const NAV_LINKS = [
   {
     title: "Articles",
     path: "/articles",
-    },
-    {
+  },
+  {
     title: "About",
     path: "/about",
+  },
+  {
+    title: "Login",
+    path: "/login",
   },
 ];

@@ -56,7 +56,7 @@ export const FormValidation = () => {
         }
 
         if (!emailError) {
-          const isValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+          const isValid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
             email
           );
 

@@ -54,9 +54,6 @@ export const TodoItem = ({
             <Button type="submit">
               <FaSave />
             </Button>
-            <Button variant="secondary" onButtonClick={() => setIsEdit(false)}>
-              <FaTimes />
-            </Button>
           </form>
         ) : (
           <h3 className="todo-item-title">{todo.title}</h3>
